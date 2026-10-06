@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light dark">
+  <meta name="description" content="Simulaê — simulados no estilo Enem gerados e corrigidos por IA. Simulado não oficial.">
+  <title>Simulaê — Simulados com IA</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231d3fa6'/%3E%3Cpath d='M18 33l9 9 19-21' fill='none' stroke='%23fff' stroke-width='7' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="vendor/katex.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <script src="vendor/katex.min.js" defer></script>
+  <script type="module" src="app.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Pular para o conteúdo</a>
+  <div id="mock-banner" class="mock-banner" hidden role="status">Modo demonstração — IA simulada</div>
+  <header class="site-header" id="site-header">
+    <div class="container header-inner">
+      <a href="#/" class="brand" aria-label="Simulaê — início">
+        <svg class="brand-mark" viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14"/><path d="M18 33l9 9 19-21"/></svg>
+        <span class="brand-name">Simula<span class="brand-e">ê</span></span>
+      </a>
+      <span class="unofficial">Simulado não oficial</span>
+    </div>
+  </header>
+  <main id="main" tabindex="-1"></main>
+  <div id="toasts" class="toasts" aria-live="polite" aria-atomic="false"></div>
+  <div id="sr-announcer" class="sr-only" aria-live="assertive" aria-atomic="true"></div>
+  <noscript><p class="container">O Simulaê precisa de JavaScript para funcionar.</p></noscript>
+</body>
+</html>

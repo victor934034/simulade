@@ -1,0 +1,28 @@
+{
+  "name": "simulae",
+  "version": "1.0.0",
+  "description": "Simulaê — simulado estilo Enem gerado e corrigido por IA",
+  "type": "module",
+  "private": true,
+  "main": "server/index.js",
+  "engines": {
+    "node": ">=20"
+  },
+  "scripts": {
+    "start": "node server/index.js",
+    "test": "node test/unit.js && node test/anthropic-fake.js && node test/smoke.js",
+    "test:unit": "node test/unit.js",
+    "test:smoke": "node test/smoke.js",
+    "test:browser": "node test/browser.js",
+    "test:fake-api": "node test/anthropic-fake.js",
+    "test:real": "node test/real.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.131.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.21.2"
+  },
+  "devDependencies": {
+    "playwright-core": "^1.48.0"
+  }
+}
